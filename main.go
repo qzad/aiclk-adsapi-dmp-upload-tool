@@ -71,7 +71,7 @@ func main() {
 
 func usage() {
 	fmt.Fprintf(os.Stderr, `dmp-upload-tool version: 1.0.0
-Usage: dmp-upload-tool [-at access_token] [-s sts_api]
+Usage: dmp-upload-tool [-at access_token] [-s sts_api] [-l local_file] [-f file_name]
 
 Options:
 `)

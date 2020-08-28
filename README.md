@@ -10,7 +10,7 @@ API参考：https://openapi.aiclk.com/docs
 
 ```shell
 dmp-upload-tool version: 1.0.0
-Usage: dmp-upload-tool [-at access_token] [-s sts_api]
+Usage: dmp-upload-tool [-at access_token] [-s sts_api] [-l local_file] [-f file_name]
 
 Options:
   -at access token
@@ -41,6 +41,10 @@ $ dmp-upload-tool -at 11e03d30e734ad3676627930b4593e2c1b7830e0c28e2e2aa2f -l /da
 
 ````
 
+工具执行原理：
+
+![image](img/Dmp文件上传工具原理.png)
+
 工具执行时会打印日志：
 ```shell script
 Step 1：获取STS临时授权
@@ -52,4 +56,4 @@ Step 3：文件名同步趣智营销
 ````
 如果执行过程中出现错误，会有对应的日志打印
 
-问题请联系
+问题请联系 xieao@qutoutiao.net
