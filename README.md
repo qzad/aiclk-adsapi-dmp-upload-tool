@@ -21,7 +21,7 @@ Options:
   -l local_file
         path of the local_file to be uploaded
   -s STS
-        the url used to obtain an STS authorization (default "http://cpc-backend-ocean-gateway-pre.qttcs3.cn/openapi/oss/sts")
+        the url used to obtain an STS authorization (default "https://openapi.aiclk.com/openapi/oss/sts")
 
 ````
 

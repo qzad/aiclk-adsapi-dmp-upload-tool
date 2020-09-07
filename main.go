@@ -18,7 +18,7 @@ var (
 func init() {
 	flag.BoolVar(&h, "h", false, "this help")
 	flag.StringVar(&accessToken, "at", "", "`access token` for the developer platform")
-	flag.StringVar(&stsApi, "s", "http://cpc-backend-ocean-gateway-pre.qttcs3.cn/openapi/oss/sts", "the url used to obtain an `STS` authorization")
+	flag.StringVar(&stsApi, "s", "https://openapi.aiclk.com/openapi/oss/sts", "the url used to obtain an `STS` authorization")
 	flag.StringVar(&fileName, "f", "file", "the remote `file_name` of the uploaded file")
 	flag.StringVar(&localFile, "l", "", "path of the `local_file` to be uploaded")
 	flag.Usage = usage
@@ -59,7 +59,7 @@ func main() {
 
 	sts := stsRet.Data
 	fmt.Println("Step 2：OSS文件上传")
-	objectName, err := uploadFile(sts.AppId, fileName, "/Users/qtt/Desktop/mkt.txt", sts.AccessKeyID, sts.AccessKeySecret, sts.SecurityToken)
+	objectName, err := uploadFile(sts.AppId, fileName, localFile, sts.AccessKeyID, sts.AccessKeySecret, sts.SecurityToken)
 	if err != nil {
 		fmt.Println("\t失败--" + err.Error())
 		return
