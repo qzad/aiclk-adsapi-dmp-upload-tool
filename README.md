@@ -2,7 +2,7 @@
 
 API参考：https://openapi.aiclk.com/docs
 
-您可以直接选择：
+您可以选择：
 1. 直接下载二进制文件(bin目录下)，添加execute权限后，在linux环境下直接使用
 2. 下载源码包，自己进行修改编译
 
