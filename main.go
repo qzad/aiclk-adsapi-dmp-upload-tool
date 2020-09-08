@@ -19,7 +19,7 @@ func init() {
 	flag.BoolVar(&h, "h", false, "this help")
 	flag.StringVar(&accessToken, "at", "", "`access token` for the developer platform")
 	flag.StringVar(&stsApi, "s", "https://openapi.aiclk.com/openapi/oss/sts", "the url used to obtain an `STS` authorization")
-	flag.StringVar(&fileName, "f", "file", "the remote `file_name` of the uploaded file")
+	flag.StringVar(&fileName, "f", "file.txt", "the remote `file_name` of the uploaded file")
 	flag.StringVar(&localFile, "l", "", "path of the `local_file` to be uploaded")
 	flag.Usage = usage
 }
